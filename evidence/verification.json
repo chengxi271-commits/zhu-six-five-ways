@@ -1,0 +1,156 @@
+{
+  "version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "exit_code": 0,
+  "theorems": 20,
+  "axioms": {
+    "first_way": [
+      "propext",
+      "Quot.sound"
+    ],
+    "second_way": [
+      "propext"
+    ],
+    "third_way": [
+      "propext",
+      "Quot.sound"
+    ],
+    "fourth_way": [
+      "propext",
+      "Quot.sound"
+    ],
+    "fifth_way": [
+      "propext",
+      "Quot.sound"
+    ],
+    "five_ways_concord": [
+      "propext",
+      "Quot.sound"
+    ],
+    "existence": [
+      "propext",
+      "Quot.sound"
+    ],
+    "six_parts": [],
+    "six_perfect": [],
+    "twenty_eight_perfect": [],
+    "zero_not_perfect": [],
+    "perfect_lower_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "six_motion": [
+      "propext",
+      "Quot.sound"
+    ],
+    "six_cause": [],
+    "six_necessity": [
+      "propext",
+      "Quot.sound"
+    ],
+    "six_degree": [
+      "propext",
+      "Quot.sound"
+    ],
+    "six_purpose": [],
+    "firstness_is_needed": [
+      "propext",
+      "Quot.sound"
+    ],
+    "integrality_is_needed": [],
+    "three_routes_distinct_from_conjunction": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "table_rows": [
+    {
+      "n": 0,
+      "proper_parts": [],
+      "sum": 0
+    },
+    {
+      "n": 1,
+      "proper_parts": [],
+      "sum": 0
+    },
+    {
+      "n": 2,
+      "proper_parts": [
+        1
+      ],
+      "sum": 1
+    },
+    {
+      "n": 3,
+      "proper_parts": [
+        1
+      ],
+      "sum": 1
+    },
+    {
+      "n": 4,
+      "proper_parts": [
+        1,
+        2
+      ],
+      "sum": 3
+    },
+    {
+      "n": 5,
+      "proper_parts": [
+        1
+      ],
+      "sum": 1
+    },
+    {
+      "n": 6,
+      "proper_parts": [
+        1,
+        2,
+        3
+      ],
+      "sum": 6
+    },
+    {
+      "n": 7,
+      "proper_parts": [
+        1
+      ],
+      "sum": 1
+    },
+    {
+      "n": 10,
+      "proper_parts": [
+        1,
+        2,
+        5
+      ],
+      "sum": 8
+    },
+    {
+      "n": 12,
+      "proper_parts": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "sum": 16
+    },
+    {
+      "n": 28,
+      "proper_parts": [
+        1,
+        2,
+        4,
+        7,
+        14
+      ],
+      "sum": 28
+    }
+  ],
+  "custom_axioms": false,
+  "sorry": false,
+  "threads": 2
+}

@@ -1,0 +1,10 @@
+lean/.lake/
+lean/Audit.lean
+*.olean
+*.ilean
+__pycache__/
+paper/build/
+*.aux
+*.log
+!evidence/lean-validation.log
+*.out

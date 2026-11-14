@@ -1,0 +1,6 @@
+name = "quinque_viae"
+version = "0.2.0"
+defaultTargets = ["Main"]
+
+[[lean_lib]]
+name = "Main"

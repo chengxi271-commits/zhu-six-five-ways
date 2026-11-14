@@ -1,0 +1,41 @@
+[(0, [], 0),
+ (1, [], 0),
+ (2, [1], 1),
+ (3, [1], 1),
+ (4, [1, 2], 3),
+ (5, [1], 1),
+ (6, [1, 2, 3], 6),
+ (7, [1], 1),
+ (8, [1, 2, 4], 7),
+ (9, [1, 3], 4),
+ (10, [1, 2, 5], 8),
+ (11, [1], 1),
+ (12, [1, 2, 3, 4, 6], 16)]
+([1, 2, 4, 7, 14], 28)
+'QuinqueViae.first_way' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.second_way' depends on axioms: [propext]
+'QuinqueViae.third_way' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.fourth_way' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.fifth_way' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.five_ways_concord' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.existence' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.six_parts' does not depend on any axioms
+'QuinqueViae.six_perfect' does not depend on any axioms
+'QuinqueViae.twenty_eight_perfect' does not depend on any axioms
+'QuinqueViae.zero_not_perfect' does not depend on any axioms
+'QuinqueViae.perfect_lower_bound' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.first_way' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.second_way' depends on axioms: [propext]
+'QuinqueViae.third_way' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.fourth_way' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.fifth_way' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.six_motion' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.six_cause' does not depend on any axioms
+'QuinqueViae.six_necessity' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.six_degree' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.six_purpose' does not depend on any axioms
+'QuinqueViae.five_ways_concord' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.existence' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.firstness_is_needed' depends on axioms: [propext, Quot.sound]
+'QuinqueViae.integrality_is_needed' does not depend on any axioms
+'QuinqueViae.three_routes_distinct_from_conjunction' depends on axioms: [propext, Quot.sound]
