@@ -1,0 +1,7 @@
+{
+  "website_editor_characters": 7215,
+  "limit": 8000,
+  "includes": "Full Markdown including title, abstract, tables, code, declarations, references, URLs and markup; whitespace excluded.",
+  "references": 8,
+  "under_limit": true
+}
