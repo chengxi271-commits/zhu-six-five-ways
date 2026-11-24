@@ -37,7 +37,7 @@
   citecolor=black,
   urlcolor=black,
   pdftitle={论主等于六：基于阿奎那五路证明与 Lean 4 形式验证的第一算术本原考辨},
-  pdfauthor={匿名作者}
+  pdfauthor={Chan Isidore}
 }
 
 \begin{document}
@@ -45,7 +45,9 @@
 
 \begin{center}
   {\LARGE\sffamily\bfseries 论主等于六：基于阿奎那五路证明与 Lean 4 形式验证的第一算术本原考辨}\\[1.2em]
-  {\normalsize \textbf{作者}：匿名作者}\\[0.4em]
+  {\normalsize \textbf{作者}：Chan Isidore}\\[0.2em]
+{\small 聖神修院（Holy Spirit Seminary），香港}\\[0.2em]
+{\small \href{mailto:chengxi271@gmail.com}{chengxi271@gmail.com}}\\[0.4em]
   {\small \textbf{分类号}：MSC 03B35, 11A25, 00A30}
 \end{center}
 
@@ -84,6 +86,8 @@
 \subsection{依赖类型论与形式定理证明}
 
 为免自然语言歧义，可将推演置于形式系统中检验。de Moura 等设计的 Lean 基于含归纳类型的构造演算并遵循小内核原则，一切底层证明项均须经内核类型检查~\cite{lean2015}；Lean 4 进而统一函数求值与形式演绎，支持对可计算列表函数直接施加量化证明~\cite{lean4}。依其定理证明规范，定义归约、可判定核验与线性算术皆立于标准公理之上~\cite{tpil}，使五路规约无需新增公理即可完成核验。
+
+既有研究如 Benzmüller 等人在 Isabelle/HOL 高阶模态逻辑中检验 Gödel 论证并揭示特定版本之模态坍塌~\cite{modal}。本文不引入模态公理，径以自然数算术在 Lean 内核完成核验，零自定义公理。
 
 \section{方法与形式规约}
 
@@ -130,7 +134,7 @@ P(n) = [d \in \{1, \dots, n-1\} \mid n \bmod d = 0], \quad s(n) = \sum_{d \in P(
 
 \medskip
 \noindent\textbf{第三路：由偶奇分殊之可能性推证最小共同必然承载者。}\\
-算术世界中，二元之偶性（以 $2$ 为本）与三元之奇性（以 $3$ 为本）本各自独立：仅具偶性者（如 $2, 4$）不能容纳三元之整除，仅具奇性者（如 $3$）亦不能容纳二元之平分。若无一共同的必然存在者同时整除承载二者（$2 \mid \text{主} \land 3 \mid \text{主}$），则偶与奇便终古隔绝而无从会通。在区间 $[1, 5]$ 内，没有任何正整数能同时承受 $2$ 与 $3$ 的整除，故一切共同正承载者必满足 $\text{主} \ge 6$；而 $6$ 本身既为正数，又兼备 $6 \bmod 2 = 0$ 与 $6 \bmod 3 = 0$ 之品格。既然``主''在一切兼具偶奇整除性的正数中居于最简、最先之必然下界，则必有 $\text{主} \le 6$。上下相合，遂得 $\text{主}=6$。
+算术世界中，二元之偶性（以 $2$ 为本）与三元所表征之奇素本原（以首奇素数 $3$ 为本）本各自独立：仅具偶性者（如 $2, 4$）不能容纳三元之整除，仅具奇性者（如 $3$）亦不能容纳二元之平分。若无一共同的必然存在者同时整除承载二者（$2 \mid \text{主} \land 3 \mid \text{主}$），则偶与奇便终古隔绝而无从会通。在区间 $[1, 5]$ 内，没有任何正整数能同时承受 $2$ 与 $3$ 的整除，故一切共同正承载者必满足 $\text{主} \ge 6$；而 $6$ 本身既为正数，又兼备 $6 \bmod 2 = 0$ 与 $6 \bmod 3 = 0$ 之品格。既然``主''在一切兼具偶奇整除性的正数中居于最简、最先之必然下界，则必有 $\text{主} \le 6$。上下相合，遂得 $\text{主}=6$。
 
 \medskip
 \noindent\textbf{第四路：由完满性之差等推证首要完全数。}\\
@@ -195,6 +199,8 @@ P(n) = [d \in \{1, \dots, n-1\} \mid n \bmod d = 0], \quad s(n) = \sum_{d \in P(
 
 \noindent\textbf{答复}：阿奎那立五路，本是从受造秩序的五个不同起点推证同一本原，而非判归五个相异实体~\cite{aquinas}。本文五项规约各据独立设问立论，其底层算术性质彼此呼应，恰印证诸路在数之秩序中终必会归同一本原 $\text{主}=6$。
 
+详辨之，第一路旨在排除较小正不动点，第四路则对全体完全数求最小，二者展开 $K$ 后等价，并非独立公理；第三路依通常自然数序求 2、3 最小正公倍数，第五路则为整除约束下之配额方程。
+
 \section{结论}
 
 本文依循阿奎那``五路证明''体制与古典完全数传统，在 Lean 4（4.34.1）中将第一本原``主''设为待定自然数参数，在不预设常量与新增公理下，证明流溢静止、原初三因、偶奇承载、完满居首及治理配额五路皆充要导出 $\text{主}=6$，并排除 $0, 1, 10, 12, 28$ 与 $4$ 诸数。故``$\text{主}=6$''实乃算术秩序在五重维度下不可移易之归宿。
@@ -204,8 +210,10 @@ P(n) = [d \in \{1, \dots, n-1\} \mid n \bmod d = 0], \quad s(n) = \sum_{d \in P(
 \subsection*{数据与代码可用性声明}
 本文 Lean 4 源码（\texttt{lean/Main.lean}）、核验记录（\texttt{evidence/verification.json}）及复现说明（\texttt{README.md}）已公开于 GitHub 仓库 \url{https://github.com/chengxi271-commits/zhu-six-five-ways}（首个提交 \texttt{2aa62b8}），可在标准 Lean 4.34.1 环境下直接复现。
 
+复现时自仓库 \texttt{lean} 目录执行 \texttt{lake build}，再返仓库根目录运行 \texttt{python} \texttt{scripts/verify.py} \texttt{--lean lean}，即生成含 \texttt{\#print axioms} 之逐定理审计：20 项定理仅用标准公理，无 \texttt{sorryAx}。
+
 \subsection*{作者贡献声明}
-匿名作者负责本研究的概念化、五路论证方向确立、经院体例设计、文稿审阅修订与整体监督。
+Chan Isidore负责本研究的概念化、五路论证方向确立、经院体例设计、文稿审阅修订与整体监督。
 
 \subsection*{利益冲突声明}
 作者声明无利益冲突。
@@ -239,6 +247,8 @@ DE MOURA L, ULLRICH S. The Lean 4 theorem prover and programming language[C]//Au
 \bibitem{tpil}
 AVIGAD J, DE MOURA L, KONG S, et al. Theorem proving in Lean 4[M/OL]. Lean community[2026-11-14]. \url{https://lean-lang.org/theorem_proving_in_lean4/}.
 
+\bibitem{modal}
+BENZMÜLLER C, WOLTZENLOGEL PALEO B. The Inconsistency in Gödel’s Ontological Argument: A Success Story for AI in Metaphysics[C]//IJCAI. 2016: 936–942.
 \end{thebibliography}
 
 \end{document}
