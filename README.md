@@ -31,15 +31,10 @@ Python 脚本只依赖标准库。运行结果写入 `evidence/`。`Audit.lean` 
 - `evidence/lean-validation.log`：实际核验输出。
 - `evidence/verification.json`：定理依赖和候选数数据。
 
-论文署名为 Chan Isidore（聖神修院，香港）；工具参与说明见最终稿。此仓库的公开不表示期刊录用或发表。
-
 ## 稿件
 
 - [PDF 定稿](paper/zhu-six.pdf)
 - [在线投稿 Markdown](paper/article.md)
 - [LaTeX 源文件](paper/main.tex)
 
-全文按投稿网站编辑器 `text.replace(/\s/g, '').length` 计数为 **7,741**，包含题名、摘要、表格、声明、参考文献、网址及 Markdown 标记，低于 8,000。长度记录见 `evidence/length-check.json`。
-
-PDF 使用 XeLaTeX 编译两遍，需安装 ctex、DejaVu Serif/Sans/Sans Mono 和 Noto Serif SC/Noto Sans SC 字体。通讯邮箱：chengxi271@gmail.com。署名终稿固定版本：camera-ready-v1。
-
+PDF 使用 XeLaTeX 编译两遍，需安装 ctex、DejaVu Serif/Sans/Sans Mono 和 Noto Serif SC/Noto Sans SC 字体。署名终稿：Chan Isidore，聖神修院（Holy Spirit Seminary），香港。通讯邮箱：chengxi271@gmail.com。
