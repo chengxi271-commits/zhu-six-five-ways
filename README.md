@@ -2,6 +2,8 @@
 
 Lean 4 formal artifact for **论主等于六：基于阿奎那五路证明与 Lean 4 形式验证的第一算术本原考辨**。
 
+这只是一个玩笑项目，无意冒犯任何现实中存在的信仰和宗教团体。如有，请联系作者删除。
+
 ## 证明与复现
 
 五路论证分别由 `ViaMotion`、`ViaCause`、`ViaNecessity`、`ViaDegree`、`ViaPurpose` 给出条件，导出同一自然数参数等于六。源码还包含五路充要关系、共同存在实例及候选数辨析。
@@ -37,4 +39,4 @@ Python 脚本只依赖标准库。运行结果写入 `evidence/`。`Audit.lean` 
 - [在线投稿 Markdown](paper/article.md)
 - [LaTeX 源文件](paper/main.tex)
 
-PDF 使用 XeLaTeX 编译两遍，需安装 ctex、DejaVu Serif/Sans/Sans Mono 和 Noto Serif SC/Noto Sans SC 字体。署名终稿：Chan Isidore，聖神修院（Holy Spirit Seminary），香港。通讯邮箱：chengxi271@gmail.com。
+PDF 使用 XeLaTeX 编译两遍，需安装 ctex、DejaVu Serif/Sans/Sans Mono 和 Noto Serif SC/Noto Sans SC 字体。
